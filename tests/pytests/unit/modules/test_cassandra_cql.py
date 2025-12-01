@@ -245,7 +245,7 @@ def test_returns_opts_if_specified():
 
         assert cassandra_cql._get_ssl_opts() == {  # pylint: disable=protected-access
             "ca_certs": "/etc/ssl/certs/ca-bundle.trust.crt",
-            "ssl_version": ssl.PROTOCOL_TLSv1,
+            "ssl_version": ssl.PROTOCOL_SSLv3,
         }  # pylint: disable=no-member
 
 
